@@ -10,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool isLoading = false;
-
+  bool hasLoaded = false;
   void startDownload() async {
     setState(() {
       isLoading = true;
