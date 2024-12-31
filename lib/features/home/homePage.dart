@@ -38,7 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Container(
-          width: MediaQuery.of(context).size.width / 1.49,
+          width: MediaQuery.of(context).size.width / 1.51,
+          height: MediaQuery.of(context).size.height / 19,
           // height: 40,
           child: ElevatedButton(
             onPressed: (isDownloading || isDownloaded) ? null : startDownload,
