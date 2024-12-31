@@ -38,8 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Container(
-          width: MediaQuery.of(context).size.width / 1.51,
-          height: MediaQuery.of(context).size.height / 19,
+          width: MediaQuery.of(context).size.width / 1.60,
+          height: MediaQuery.of(context).size.height / 17,
           child: Card(
             color: Colors.black,
             child: TextButton(onPressed: (){},
