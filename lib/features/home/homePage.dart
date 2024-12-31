@@ -54,9 +54,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 )
             ),
-
-            child: TextButton(onPressed: (){},
-                child: Text("Download", style: TextStyle(color: Colors.white),)),
+            child: GestureDetector(
+              onTap: (){},
+              child: Center(
+                child: Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
+              ),
+            ),
+            // child: TextButton(onPressed: (){},
+            //     child: Text("Download", style: TextStyle(color: Colors.white),)),
           ),
           // child: ElevatedButton(
           //   onPressed: (isDownloading || isDownloaded) ? null : startDownload,
