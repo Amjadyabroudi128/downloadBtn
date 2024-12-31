@@ -38,11 +38,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Card(
-          color: Colors.black,
+          // color: Colors.black,
           child: Container(
             width: MediaQuery.of(context).size.width / 1.60,
             height: MediaQuery.of(context).size.height / 17,
             decoration: BoxDecoration(
+                color: Colors.black,
                 border: Border(
                   bottom: BorderSide(
                       color: Colors.grey.shade600,
