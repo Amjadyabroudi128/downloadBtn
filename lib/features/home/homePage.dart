@@ -37,11 +37,24 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       body: Center(
-        child: Container(
-          width: MediaQuery.of(context).size.width / 1.60,
-          height: MediaQuery.of(context).size.height / 17,
-          child: Card(
-            color: Colors.black,
+        child: Card(
+          color: Colors.black,
+          child: Container(
+            width: MediaQuery.of(context).size.width / 1.60,
+            height: MediaQuery.of(context).size.height / 17,
+            decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                      color: Colors.grey.shade600,
+                      width: 4
+                  ),
+                  right: BorderSide(
+                      color: Colors.grey.shade600,
+                      width: 3
+                  ),
+                )
+            ),
+
             child: TextButton(onPressed: (){},
                 child: Text("Download", style: TextStyle(color: Colors.white),)),
           ),
