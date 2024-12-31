@@ -40,45 +40,49 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           width: MediaQuery.of(context).size.width / 1.51,
           height: MediaQuery.of(context).size.height / 19,
-          // height: 40,
-          child: ElevatedButton(
-            onPressed: (isDownloading || isDownloaded) ? null : startDownload,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.black,
-              foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
-              textStyle: const TextStyle(fontSize: 16),
-            ),
-            child: Text("Download"),
-            // child: Stack(
-            //   alignment: Alignment.center,
-            //   children: [
-            //     if (isDownloading)
-            //       const Positioned(
-            //         bottom: 0,
-            //         left: 0,
-            //         right: 0,
-            //         child: LinearProgressIndicator(
-            //           minHeight: 4,
-            //           color: Colors.white,
-            //           backgroundColor: Colors.grey,
-            //         ),
-            //       ),
-            //     Row(
-            //       mainAxisSize: MainAxisSize.min,
-            //       children: [
-            //         Icon(isDownloaded ? Icons.check : Icons.download),
-            //         const SizedBox(width: 8),
-            //         Text(
-            //           isDownloading
-            //               ? "Downloading..."
-            //               : (isDownloaded ? "Downloaded" : "Download"),
-            //         ),
-            //       ],
-            //     ),
-            //   ],
-            // ),
+          child: Card(
+            color: Colors.black,
+            child: TextButton(onPressed: (){},
+                child: Text("Download", style: TextStyle(color: Colors.white),)),
           ),
+          // child: ElevatedButton(
+          //   onPressed: (isDownloading || isDownloaded) ? null : startDownload,
+          //   style: ElevatedButton.styleFrom(
+          //     backgroundColor: Colors.black,
+          //     foregroundColor: Colors.white,
+          //     padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+          //     textStyle: const TextStyle(fontSize: 16),
+          //   ),
+          //   child: Text("Download"),
+          //   // child: Stack(
+          //   //   alignment: Alignment.center,
+          //   //   children: [
+          //   //     if (isDownloading)
+          //   //       const Positioned(
+          //   //         bottom: 0,
+          //   //         left: 0,
+          //   //         right: 0,
+          //   //         child: LinearProgressIndicator(
+          //   //           minHeight: 4,
+          //   //           color: Colors.white,
+          //   //           backgroundColor: Colors.grey,
+          //   //         ),
+          //   //       ),
+          //   //     Row(
+          //   //       mainAxisSize: MainAxisSize.min,
+          //   //       children: [
+          //   //         Icon(isDownloaded ? Icons.check : Icons.download),
+          //   //         const SizedBox(width: 8),
+          //   //         Text(
+          //   //           isDownloading
+          //   //               ? "Downloading..."
+          //   //               : (isDownloaded ? "Downloaded" : "Download"),
+          //   //         ),
+          //   //       ],
+          //   //     ),
+          //   //   ],
+          //   // ),
+          // ),
         ),
       ),
     );
