@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ElevatedButton(
           onPressed: (isDownloading || isDownloaded) ? null : startDownload,
           style: ElevatedButton.styleFrom(
-            backgroundColor: isDownloaded ? Colors.green : Colors.blue,
+            backgroundColor: Colors.black,
             foregroundColor: Colors.white,
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
             textStyle: const TextStyle(fontSize: 16),
