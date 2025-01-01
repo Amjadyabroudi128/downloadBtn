@@ -1,3 +1,4 @@
+import 'package:download_button/components/containerBorder.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -45,10 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.circular(10),
                 color: Colors.black,
                 border: Border(
-                  bottom: BorderSide(
-                      color: Colors.grey.shade600,
-                      width: 4
-                  ),
+                  bottom: containerBorder.btm,
                   right: BorderSide(
                       color: Colors.grey.shade600,
                       width: 3
