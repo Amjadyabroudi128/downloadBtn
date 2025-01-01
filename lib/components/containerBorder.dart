@@ -9,7 +9,7 @@ class containerBorder {
         width: 4,
   );
   static BorderSide right = BorderSide(
-        color: Colors.grey.shade600,
+        color: myColor.bColor,
         width: 3
     );
   static BorderRadiusGeometry circular = BorderRadius.circular(11);
