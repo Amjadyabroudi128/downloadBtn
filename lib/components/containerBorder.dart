@@ -2,6 +2,7 @@
  import 'package:flutter/material.dart';
 
 class containerBorder {
+
   static BorderSide btm = BorderSide(
         color: Colors.grey.shade600,
         width: 4,
@@ -10,4 +11,5 @@ class containerBorder {
         color: Colors.grey.shade600,
         width: 3
     );
+  static BorderRadiusGeometry circular = BorderRadius.circular(11);
  }
