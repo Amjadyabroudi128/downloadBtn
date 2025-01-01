@@ -1,5 +1,5 @@
  import 'package:flutter/material.dart';
 
-class BtnColors {
-  Color bColor = Colors.grey.shade600;
+class myColor {
+  static Color bColor = Colors.grey.shade600;
  }
