@@ -57,8 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: GestureDetector(
               onTap: (){},
-              child: Center(
-                child: Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.download, color: Colors.white,),
+                    SizedBox(width: 55,),
+                    Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
+                  ],
+                ),
               ),
             ),
             // child: TextButton(onPressed: (){},
