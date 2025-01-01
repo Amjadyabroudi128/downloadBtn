@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class containerBorder {
 
   static BorderSide btm = BorderSide(
-        color: myColor,
+        color: myColor.bColor,
         width: 4,
   );
   static BorderSide right = BorderSide(
