@@ -6,10 +6,8 @@ class containerBorder {
         color: Colors.grey.shade600,
         width: 4,
   );
-  static Border right = Border(
-    right: BorderSide(
+  static BorderSide right = BorderSide(
         color: Colors.grey.shade600,
         width: 3
-    ),
-  );
+    );
  }
