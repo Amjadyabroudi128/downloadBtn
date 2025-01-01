@@ -47,10 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.black,
                 border: Border(
                   bottom: containerBorder.btm,
-                  right: BorderSide(
-                      color: Colors.grey.shade600,
-                      width: 3
-                  ),
+                  right: containerBorder.right
                 )
             ),
             child: GestureDetector(
