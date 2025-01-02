@@ -1,3 +1,4 @@
+import 'package:download_button/components/appSizes.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:flutter/material.dart';
@@ -41,8 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Card(
           child: Container(
-            width: MediaQuery.of(context).size.width / 1.60,
-            height: MediaQuery.of(context).size.height / 18.5,
+            width: myContainerSizes.cWidth(context),
+            height: myContainerSizes.cHeight(context),
             decoration: BoxDecoration(
               borderRadius: containerBorder.circular,
                 color: myColor.border,
