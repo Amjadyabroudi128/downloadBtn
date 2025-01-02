@@ -13,4 +13,5 @@ class containerBorder {
         width: 3
     );
   static BorderRadiusGeometry circular = BorderRadius.circular(11);
+  static EdgeInsetsGeometry myPadding =  EdgeInsets.all(12);
  }
