@@ -1,3 +1,4 @@
+import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:flutter/material.dart';
 
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: MediaQuery.of(context).size.height / 18.5,
             decoration: BoxDecoration(
               borderRadius: containerBorder.circular,
-                color: Colors.black,
+                color: myColor.border,
                 border: Border(
                   bottom: containerBorder.btm,
                   right: containerBorder.right
