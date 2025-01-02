@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: GestureDetector(
               onTap: (){},
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: containerBorder.myPadding,
                 child: Row(
                   children: [
                     Icon(Icons.download, color: Colors.white,),
