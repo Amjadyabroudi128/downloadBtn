@@ -1,6 +1,7 @@
 import 'package:download_button/components/appSizes.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
+import 'package:download_button/components/myIcons.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: containerBorder.myPadding,
                 child: Row(
                   children: [
-                    Icon(Icons.download, color: myColor.iconClr, size: 26,),
+                    myIcons.download,
                     myContainerSizes.myBox,
                     Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
                   ],
