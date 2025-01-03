@@ -4,4 +4,5 @@ class myColor {
   static Color bColor = Colors.grey.shade600;
   static Color border = Colors.black;
   static Color iconClr = Colors.white;
+  static Color txtClr = Colors.white70;
  }
