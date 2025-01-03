@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     myIcons.download,
                     myContainerSizes.myBox,
-                    Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
+                    Text("Download", style: TextStyle(fontSize: 18, color: myColor.txtClr),),
                   ],
                 ),
               ),
