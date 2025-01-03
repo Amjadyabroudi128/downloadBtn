@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     Icon(Icons.download, color: Colors.white,),
-                    SizedBox(width: 55,),
+                    myContainerSizes.myBox,
                     Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
                   ],
                 ),
