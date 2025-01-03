@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: containerBorder.myPadding,
                 child: Row(
                   children: [
-                    Icon(Icons.download, color: myColor.iconClr),
+                    Icon(Icons.download, color: myColor.iconClr, size: 26,),
                     myContainerSizes.myBox,
                     Text("Download", style: TextStyle(fontSize: 18, color: Colors.white),),
                   ],
