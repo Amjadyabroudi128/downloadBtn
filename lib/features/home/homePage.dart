@@ -1,3 +1,4 @@
+import 'package:download_button/components/Strings.dart';
 import 'package:download_button/components/appSizes.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
@@ -62,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     myIcons.download,
                     myContainerSizes.myBox,
-                    Text("Download", style: Textstyles.dText,),
+                    Text(kStrings.download, style: Textstyles.dText,),
                   ],
                 ),
               ),
