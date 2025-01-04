@@ -6,4 +6,5 @@ import 'colors.dart';
 
 class myIcons {
   static Icon download = Icon(Icons.download, color: myColor.iconClr, size: 26,);
+  static Icon check = Icon(Icons.check, color: myColor.iconClr, size: 26,);
  }
