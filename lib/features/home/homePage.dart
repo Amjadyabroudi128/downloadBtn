@@ -56,12 +56,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
             ),
             child: GestureDetector(
-              onTap: (){},
+              onTap: (){
+                (isDownloading || isDownloaded) ? null : startDownload();
+              },
               child: Padding(
                 padding: containerBorder.myPadding,
                 child: Row(
                   children: [
-                    myIcons.download,
+                    Icon(isDownloaded ? Icons.check : Icons.download, color: Colors.white70,),
                     myContainerSizes.myBox,
                     Text(kStrings.download, style: Textstyles.dText,),
                   ],
