@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     isDownloaded ? myIcons.check : myIcons.download,
-                    // Icon(isDownloaded ? myIcons.check : myIcons.download, color: Colors.white70),
+
                     myContainerSizes.myBox,
                     Text(kStrings.download, style: Textstyles.dText,),
                   ],
