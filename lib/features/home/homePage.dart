@@ -66,7 +66,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     isDownloaded ? myIcons.check : myIcons.download,
 
                     myContainerSizes.myBox,
-                    Text(kStrings.download, style: Textstyles.dText,),
+                    Text(
+                      isDownloading
+                          ? "Downloading..."
+                          : (isDownloaded ? "Downloaded" : "Download"),
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
                   ],
                 ),
               ),
@@ -102,11 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
           //   //       children: [
           //   //         Icon(isDownloaded ? Icons.check : Icons.download),
           //   //         const SizedBox(width: 8),
-          //   //         Text(
-          //   //           isDownloading
-          //   //               ? "Downloading..."
-          //   //               : (isDownloaded ? "Downloaded" : "Download"),
-          //   //         ),
           //   //       ],
           //   //     ),
           //   //   ],
