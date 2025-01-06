@@ -66,12 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     isDownloaded ? myIcons.check : myIcons.download,
 
                     myContainerSizes.myBox,
-                    Text(
-                      isDownloading
-                          ? "Downloading..."
-                          : (isDownloaded ? "Downloaded" : "Download"),
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                    ),
+                    textWidget(isDownloading: isDownloading, isDownloaded: isDownloaded),
                   ],
                 ),
               ),
@@ -117,3 +112,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
