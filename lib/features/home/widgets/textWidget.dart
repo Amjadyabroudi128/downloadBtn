@@ -17,7 +17,7 @@ class textWidget extends StatelessWidget {
     return Text(
       isDownloading
           ? kStrings.downloading
-          : (isDownloaded ? "Downloaded" : kStrings.download),
+          : (isDownloaded ? kStrings.downloaded : kStrings.download),
       style: Textstyles.dText,
     );
   }
