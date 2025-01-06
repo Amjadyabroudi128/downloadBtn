@@ -4,6 +4,7 @@ import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/myIcons.dart';
 import 'package:download_button/components/textStyles.dart';
+import 'package:download_button/features/home/widgets/textWidget.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
