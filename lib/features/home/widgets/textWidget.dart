@@ -1,3 +1,4 @@
+import 'package:download_button/components/Strings.dart';
 import 'package:download_button/components/textStyles.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class textWidget extends StatelessWidget {
     return Text(
       isDownloading
           ? "Downloading..."
-          : (isDownloaded ? "Downloaded" : "Download"),
+          : (isDownloaded ? "Downloaded" : kStrings.download),
       style: Textstyles.dText,
     );
   }
