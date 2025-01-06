@@ -1,3 +1,4 @@
+import 'package:download_button/components/textStyles.dart';
 import 'package:flutter/material.dart';
 
 class textWidget extends StatelessWidget {
@@ -16,7 +17,7 @@ class textWidget extends StatelessWidget {
       isDownloading
           ? "Downloading..."
           : (isDownloaded ? "Downloaded" : "Download"),
-      style: TextStyle(fontSize: 18, color: Colors.white),
+      style: Textstyles.dText,
     );
   }
 }
