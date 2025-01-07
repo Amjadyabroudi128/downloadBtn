@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: myContainerSizes.cHeight(context),
             decoration: BoxDecoration(
               borderRadius: containerBorder.circular,
-                color: isDownloaded ? Colors.green : Colors.black,
+                color: isDownloading ? Colors.green : (isDownloaded ? Colors.blue : Colors.black),
                 border: Border(
                   bottom: containerBorder.btm,
                   right: containerBorder.right
