@@ -5,7 +5,7 @@ class myColor {
   static Color border = Colors.black;
   static Color iconClr = Colors.white;
   static Color txtClr = Colors.white70;
-  static Color downloading = Colors.green;
+  static Color downloading = Colors.teal.shade600;
   static Color downloaded = Colors.blue;
   static Color download = Colors.black;
  }
