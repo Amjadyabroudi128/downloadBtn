@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
             decoration: BoxDecoration(
               borderRadius: containerBorder.circular,
                 color: isDownloading ? myColor.downloading :
-                (isDownloaded ? myColor.downloaded : Colors.black),
+                (isDownloaded ? myColor.downloaded : myColor.download),
                 border: Border(
                   bottom: containerBorder.btm,
                   right: containerBorder.right
