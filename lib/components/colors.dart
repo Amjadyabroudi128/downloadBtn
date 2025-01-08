@@ -8,4 +8,5 @@ class myColor {
   static Color downloading = Colors.teal.shade600;
   static Color downloaded = Colors.blue;
   static Color download = Colors.black;
+  static Color linear = Colors.white;
  }
