@@ -43,67 +43,49 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Card(
-          child: Container(
-            width: myContainerSizes.cWidth(context),
-            height: myContainerSizes.cHeight(context),
-            decoration: BoxDecoration(
-              borderRadius: containerBorder.circular,
-                color: isDownloading ? myColor.downloading :
-                (isDownloaded ? myColor.downloaded : myColor.download),
-                border: Border(
-                  bottom: containerBorder.btm,
-                  right: containerBorder.right
-                )
-            ),
-            child: GestureDetector(
-              onTap: (){
-                (isDownloading || isDownloaded) ? null : startDownload();
-              },
-              child: Padding(
-                padding: containerBorder.myPadding,
-                child: Row(
-                  children: [
-                    isDownloaded ? myIcons.check : myIcons.download,
-                    myContainerSizes.myBox,
-                    textWidget(isDownloading: isDownloading, isDownloaded: isDownloaded),
-                  ],
+          child: Stack(
+            children:[
+              if(isDownloading)
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: LinearProgressIndicator(
+                    minHeight: 4,
+                    color: Colors.white,
+                    backgroundColor: Colors.grey,
+                  ),
+                ),
+              Container(
+              width: myContainerSizes.cWidth(context),
+              height: myContainerSizes.cHeight(context),
+              decoration: BoxDecoration(
+                borderRadius: containerBorder.circular,
+                  color: isDownloading ? myColor.downloading :
+                  (isDownloaded ? myColor.downloaded : myColor.download),
+                  border: Border(
+                    bottom: containerBorder.btm,
+                    right: containerBorder.right
+                  )
+              ),
+              child: GestureDetector(
+                onTap: (){
+                  (isDownloading || isDownloaded) ? null : startDownload();
+                },
+                child: Padding(
+                  padding: containerBorder.myPadding,
+                  child: Row(
+                    children: [
+                      isDownloaded ? myIcons.check : myIcons.download,
+                      myContainerSizes.myBox,
+                      textWidget(isDownloading: isDownloading, isDownloaded: isDownloaded),
+                    ],
+                  ),
                 ),
               ),
             ),
+        ]
           ),
-          // child: ElevatedButton(
-          //   onPressed: (isDownloading || isDownloaded) ? null : startDownload,
-          //   style: ElevatedButton.styleFrom(
-          //     backgroundColor: Colors.black,
-          //     foregroundColor: Colors.white,
-          //     padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
-          //     textStyle: const TextStyle(fontSize: 16),
-          //   ),
-          //   child: Text("Download"),
-          //   // child: Stack(
-          //   //   alignment: Alignment.center,
-          //   //   children: [
-          //   //     if (isDownloading)
-          //   //       const Positioned(
-          //   //         bottom: 0,
-          //   //         left: 0,
-          //   //         right: 0,
-          //   //         child: LinearProgressIndicator(
-          //   //           minHeight: 4,
-          //   //           color: Colors.white,
-          //   //           backgroundColor: Colors.grey,
-          //   //         ),
-          //   //       ),
-          //   //     Row(
-          //   //       mainAxisSize: MainAxisSize.min,
-          //   //       children: [
-          //   //         Icon(isDownloaded ? Icons.check : Icons.download),
-          //   //         const SizedBox(width: 8),
-          //   //       ],
-          //   //     ),
-          //   //   ],
-          //   // ),
-          // ),
         ),
       ),
     );
