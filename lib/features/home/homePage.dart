@@ -79,12 +79,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
               // Linear Progress Indicator at the bottom
               if (isDownloading)
-                Positioned(
+                const Positioned(
                   bottom: 0,
                   left: 0,
                   right: 0,
                   child: ClipRRect(
-                    borderRadius: const BorderRadius.only(
+                    borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(4),
                       bottomRight: Radius.circular(4),
                     ),
