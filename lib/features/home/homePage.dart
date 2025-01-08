@@ -76,18 +76,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               if (isDownloading)
-                const Positioned(
+                 Positioned(
                   bottom: 0,
                   left: 0,
                   right: 0,
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(4),
                       bottomRight: Radius.circular(4),
                     ),
                     child: LinearProgressIndicator(
                       minHeight: 4,
-                      color: Colors.white,
+                      color: myColor.linear,
                       backgroundColor: Colors.blue,
                     ),
                   ),
