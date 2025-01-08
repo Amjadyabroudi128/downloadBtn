@@ -44,49 +44,60 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Card(
           child: Stack(
-            children:[
-              if(isDownloading)
+            children: [
+              // Main Container
+              Container(
+                width: myContainerSizes.cWidth(context),
+                height: myContainerSizes.cHeight(context),
+                decoration: BoxDecoration(
+                  borderRadius: containerBorder.circular,
+                  color: isDownloading
+                      ? myColor.downloading
+                      : (isDownloaded ? myColor.downloaded : myColor.download),
+                  border: Border(
+                    bottom: containerBorder.btm,
+                    right: containerBorder.right,
+                  ),
+                ),
+                child: GestureDetector(
+                  onTap: () {
+                    (isDownloading || isDownloaded) ? null : startDownload();
+                  },
+                  child: Padding(
+                    padding: containerBorder.myPadding,
+                    child: Row(
+                      children: [
+                        isDownloaded ? myIcons.check : myIcons.download,
+                        myContainerSizes.myBox,
+                        textWidget(
+                            isDownloading: isDownloading, isDownloaded: isDownloaded),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+
+              // Linear Progress Indicator at the bottom
+              if (isDownloading)
                 Positioned(
                   bottom: 0,
                   left: 0,
                   right: 0,
-                  child: LinearProgressIndicator(
-                    minHeight: 4,
-                    color: Colors.white,
-                    backgroundColor: Colors.grey,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(4),
+                      bottomRight: Radius.circular(4),
+                    ),
+                    child: LinearProgressIndicator(
+                      minHeight: 4,
+                      color: Colors.green,
+                      backgroundColor: Colors.blue,
+                    ),
                   ),
                 ),
-              Container(
-              width: myContainerSizes.cWidth(context),
-              height: myContainerSizes.cHeight(context),
-              decoration: BoxDecoration(
-                borderRadius: containerBorder.circular,
-                  color: isDownloading ? myColor.downloading :
-                  (isDownloaded ? myColor.downloaded : myColor.download),
-                  border: Border(
-                    bottom: containerBorder.btm,
-                    right: containerBorder.right
-                  )
-              ),
-              child: GestureDetector(
-                onTap: (){
-                  (isDownloading || isDownloaded) ? null : startDownload();
-                },
-                child: Padding(
-                  padding: containerBorder.myPadding,
-                  child: Row(
-                    children: [
-                      isDownloaded ? myIcons.check : myIcons.download,
-                      myContainerSizes.myBox,
-                      textWidget(isDownloading: isDownloading, isDownloaded: isDownloaded),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-        ]
+            ],
           ),
-        ),
+        )
       ),
     );
   }
