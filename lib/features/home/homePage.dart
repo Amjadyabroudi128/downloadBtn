@@ -64,15 +64,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     isDownloaded ? myIcons.check : myIcons.download,
-
                     myContainerSizes.myBox,
                     textWidget(isDownloading: isDownloading, isDownloaded: isDownloaded),
                   ],
                 ),
               ),
             ),
-            // child: TextButton(onPressed: (){},
-            //     child: Text("Download", style: TextStyle(color: Colors.white),)),
           ),
           // child: ElevatedButton(
           //   onPressed: (isDownloading || isDownloaded) ? null : startDownload,
