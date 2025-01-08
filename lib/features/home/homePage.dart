@@ -45,7 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Card(
           child: Stack(
             children: [
-              // Main Container
               Container(
                 width: myContainerSizes.cWidth(context),
                 height: myContainerSizes.cHeight(context),
