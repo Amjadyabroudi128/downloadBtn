@@ -76,8 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-
-              // Linear Progress Indicator at the bottom
               if (isDownloading)
                 const Positioned(
                   bottom: 0,
