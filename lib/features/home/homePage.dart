@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: LinearProgressIndicator(
                       minHeight: 4,
                       color: myColor.linear,
-                      backgroundColor: Colors.blue,
+                      backgroundColor: myColor.bgClr,
                     ),
                   ),
                 ),
