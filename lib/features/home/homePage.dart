@@ -17,6 +17,14 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   bool isDownloading = false;
   bool isDownloaded = false;
   late AnimationController _progressController;
+  @override
+  void initState() {
+    super.initState();
+    _progressController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 3), // Match your download time
+    );
+  }
 
   void startDownload() async {
     setState(() {
