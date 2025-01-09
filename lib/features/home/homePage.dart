@@ -1,4 +1,3 @@
-import 'package:download_button/components/Duration.dart';
 import 'package:download_button/components/appSizes.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
@@ -37,8 +36,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     });
     _progressController.forward();
     // Simulate download process
-    // await for 3 seconds
-    delay(context, 3);
+    await Future.delayed(const Duration(seconds: 3));
 
     setState(() {
       isDownloading = false;
@@ -47,8 +45,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     _progressController.reset();
 
     // Reset back to normal after 2 seconds
-    delay(context, 2);
-    // await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
     setState(() {
       isDownloaded = false;
     });
