@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     setState(() {
       isDownloading = true;
     });
-
+    _progressController.forward();
     // Simulate download process
     await Future.delayed(const Duration(seconds: 3));
 
@@ -38,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       isDownloading = false;
       isDownloaded = true;
     });
+    _progressController.reset();
 
     // Reset back to normal after 2 seconds
     await Future.delayed(const Duration(seconds: 2));
@@ -95,6 +96,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                       bottomRight: Radius.circular(4),
                     ),
                     child: LinearProgressIndicator(
+                      value: _progressController.value,
                       minHeight: 4,
                       color: myColor.linear,
                       backgroundColor: myColor.bgClr,
