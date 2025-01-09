@@ -25,7 +25,11 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       duration: const Duration(seconds: 3), // Match your download time
     );
   }
-
+  @override
+  void dispose() {
+    _progressController.dispose();
+    super.dispose();
+  }
   void startDownload() async {
     setState(() {
       isDownloading = true;
