@@ -13,9 +13,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   bool isDownloading = false;
   bool isDownloaded = false;
+  late AnimationController _progressController;
 
   void startDownload() async {
     setState(() {
