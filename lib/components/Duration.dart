@@ -1,6 +1,6 @@
 
  import 'package:flutter/cupertino.dart';
 
-void delay (BuildContext context, int time)  {
-  Future.delayed(Duration(seconds: time));
+Future<void> delay (BuildContext context, int seconds)  async {
+ await Future.delayed(Duration(seconds: seconds));
 }
