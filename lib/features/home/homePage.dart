@@ -99,11 +99,16 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                       bottomLeft: Radius.circular(4),
                       bottomRight: Radius.circular(4),
                     ),
-                    child: LinearProgressIndicator(
-                      value: _progressController.value,
-                      minHeight: 4,
-                      color: myColor.linear,
-                      backgroundColor: myColor.bgClr,
+                    child: AnimatedBuilder(
+                      animation: _progressController,
+                      builder: (context, child) {
+                        return LinearProgressIndicator(
+                          value: _progressController.value,
+                          minHeight: 4,
+                          color: myColor.linear,
+                          backgroundColor: myColor.bgClr,
+                        );
+                      },
                     ),
                   ),
                 ),
