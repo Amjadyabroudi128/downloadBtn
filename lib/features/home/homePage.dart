@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     _progressController.reset();
 
     // Reset back to normal after 2 seconds
-    await Future.delayed(const Duration(seconds: 2));
+    await delay(context, 2);
     setState(() {
       isDownloaded = false;
     });
