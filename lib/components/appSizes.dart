@@ -9,4 +9,5 @@
      return MediaQuery.of(context).size.height / 17.6;
    }
    static SizedBox myBox = SizedBox(width: 55,);
+   // static Duration secs3 = Duration(seconds: 3);
  }
