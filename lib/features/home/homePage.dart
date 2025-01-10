@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     super.initState();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 3), // Match your download time
+      duration:  secs3() // Match your download time
     );
   }
   @override
