@@ -4,3 +4,6 @@
 Future<void> delay (BuildContext context, int seconds)  async {
  await Future.delayed(Duration(seconds: seconds));
 }
+ Duration secs3() {
+ return Duration(seconds: 3);
+ }
