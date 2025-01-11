@@ -6,4 +6,5 @@ class cBorder {
     bottomLeft: Radius.circular(4),
     bottomRight: Radius.circular(4),
   );
+  static Radius circular = Radius.circular(4);
  }
