@@ -101,12 +101,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                     child: AnimatedBuilder(
                       animation: _progressController,
                       builder: (context, child) {
-                        return LinearProgressIndicator(
-                          value: _progressController.value,
-                          minHeight: 4,
-                          color: myColor.linear,
-                          backgroundColor: myColor.bgClr,
-                        );
+                        return linearIndicator(progressController: _progressController);
                       },
                     ),
                   ),
@@ -115,6 +110,25 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           ),
         )
       ),
+    );
+  }
+}
+
+class linearIndicator extends StatelessWidget {
+  const linearIndicator({
+    super.key,
+    required AnimationController progressController,
+  }) : _progressController = progressController;
+
+  final AnimationController _progressController;
+
+  @override
+  Widget build(BuildContext context) {
+    return LinearProgressIndicator(
+      value: _progressController.value,
+      minHeight: 4,
+      color: myColor.linear,
+      backgroundColor: myColor.bgClr,
     );
   }
 }
