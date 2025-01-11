@@ -1,5 +1,6 @@
 import 'package:download_button/components/Duration.dart';
 import 'package:download_button/components/appSizes.dart';
+import 'package:download_button/components/clipRectBorders.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/myIcons.dart';
@@ -96,10 +97,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                   left: 0,
                   right: 0,
                   child: ClipRRect(
-                    borderRadius: const BorderRadius.only(
-                      bottomLeft: Radius.circular(4),
-                      bottomRight: Radius.circular(4),
-                    ),
+                    borderRadius:  cBorder.borders,
                     child: AnimatedBuilder(
                       animation: _progressController,
                       builder: (context, child) {
