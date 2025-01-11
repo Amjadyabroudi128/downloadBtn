@@ -2,9 +2,9 @@
  import 'package:flutter/cupertino.dart';
 
 class cBorder {
-  static BorderRadiusGeometry borders = BorderRadius.only (
-    bottomLeft: Radius.circular(4),
-    bottomRight: Radius.circular(4),
-  );
   static Radius circular = Radius.circular(4);
+  static BorderRadiusGeometry borders = BorderRadius.only (
+    bottomLeft: circular,
+    bottomRight: circular,
+  );
  }
