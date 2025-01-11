@@ -7,6 +7,8 @@ import 'package:download_button/components/myIcons.dart';
 import 'package:download_button/features/home/widgets/textWidget.dart';
 import 'package:flutter/material.dart';
 
+import '../../components/progressBar.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
@@ -114,22 +116,5 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   }
 }
 
-class linearIndicator extends StatelessWidget {
-  const linearIndicator({
-    super.key,
-    required AnimationController progressController,
-  }) : _progressController = progressController;
 
-  final AnimationController _progressController;
-
-  @override
-  Widget build(BuildContext context) {
-    return LinearProgressIndicator(
-      value: _progressController.value,
-      minHeight: 4,
-      color: myColor.linear,
-      backgroundColor: myColor.bgClr,
-    );
-  }
-}
 
