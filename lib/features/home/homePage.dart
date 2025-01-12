@@ -66,8 +66,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           child: Stack(
             children: [
               Container(
-                width: myContainerSizes.cWidth(context),
-                height: myContainerSizes.cHeight(context),
+                width: sizeHelper.cWidth(context),
+                height: sizeHelper.cHeight(context),
                 decoration: BoxDecoration(
                   borderRadius: containerBorder.circular,
                   color: isDownloading
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                     child: Row(
                       children: [
                         isDownloaded ? myIcons.check : myIcons.download,
-                        myContainerSizes.myBox,
+                        sizeHelper.myBox,
                         textWidget(
                             isDownloading: isDownloading, isDownloaded: isDownloaded),
                       ],
