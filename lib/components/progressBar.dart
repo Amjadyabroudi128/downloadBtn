@@ -1,3 +1,4 @@
+import 'package:download_button/components/appSizes.dart';
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
@@ -14,7 +15,7 @@ class linearIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return LinearProgressIndicator(
       value: _progressController.value,
-      minHeight: 4,
+      minHeight: sizeHelper.mH,
       color: myColor.linear,
       backgroundColor: myColor.bgClr,
     );
