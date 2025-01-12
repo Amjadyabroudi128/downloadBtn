@@ -11,4 +11,5 @@
    static SizedBox myBox = SizedBox(width: 55,);
    // static Duration secs3 = Duration(seconds: 3);
    static double pS = 0;
+   static double mH = 4;
  }
