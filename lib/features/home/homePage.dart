@@ -4,6 +4,7 @@ import 'package:download_button/components/clipRectBorders.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/myIcons.dart';
+import 'package:download_button/features/home/widgets/Positioned.dart';
 import 'package:download_button/features/home/widgets/animatedBuilder.dart';
 import 'package:download_button/features/home/widgets/textWidget.dart';
 import 'package:flutter/material.dart';
@@ -95,11 +96,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                 ),
               ),
               if (isDownloading)
-                 Positioned(
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  child: ClipRRect(
+                 positionedW(
+                  myChild: ClipRRect(
                     borderRadius:  cBorder.borders,
                     child: animatedBuilder(progressController: _progressController),
                   ),
