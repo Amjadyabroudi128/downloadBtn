@@ -1,7 +1,7 @@
 
  import 'package:flutter/material.dart';
 
- class myContainerSizes {
+ class sizeHelper {
    static cWidth(BuildContext context) {
      return MediaQuery.of(context).size.width / 1.60;
    }
@@ -10,4 +10,5 @@
    }
    static SizedBox myBox = SizedBox(width: 55,);
    // static Duration secs3 = Duration(seconds: 3);
+   static double pS = 0;
  }
