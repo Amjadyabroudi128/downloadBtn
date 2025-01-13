@@ -9,8 +9,6 @@ import 'package:download_button/features/home/widgets/animatedBuilder.dart';
 import 'package:download_button/features/home/widgets/textWidget.dart';
 import 'package:flutter/material.dart';
 
-import '../../components/progressBar.dart';
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
