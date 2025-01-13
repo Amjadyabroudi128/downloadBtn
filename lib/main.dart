@@ -1,3 +1,4 @@
+import 'package:download_button/themes/appTheme.dart';
 import 'package:flutter/material.dart';
 
 import 'features/home/homePage.dart';
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: appTheme.myTheme,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
