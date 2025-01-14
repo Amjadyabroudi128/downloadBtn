@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
+import '../../../components/colors.dart';
 
 class linearIndicator extends StatelessWidget {
   const linearIndicator({

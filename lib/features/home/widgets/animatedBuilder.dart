@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../components/progressBar.dart';
+import 'progressBar.dart';
 
 class animatedBuilder extends StatelessWidget {
   const animatedBuilder({
