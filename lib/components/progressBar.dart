@@ -15,7 +15,6 @@ class linearIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return LinearProgressIndicator(
       value: _progressController.value,
-      minHeight: sizeHelper.mH,
       backgroundColor: myColor.bgClr,
     );
   }
