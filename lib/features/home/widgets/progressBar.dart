@@ -14,7 +14,6 @@ class linearIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return LinearProgressIndicator(
       value: _progressController.value,
-      backgroundColor: myColor.bgClr,
     );
   }
 }
