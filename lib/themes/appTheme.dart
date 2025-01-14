@@ -6,6 +6,9 @@ class appTheme {
     iconTheme: IconThemeData(
       size: 26,
       color: myColor.iconClr
+    ),
+    progressIndicatorTheme: ProgressIndicatorThemeData(
+      color:  myColor.linear,
     )
   );
 }
