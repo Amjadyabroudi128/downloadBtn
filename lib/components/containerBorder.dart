@@ -13,6 +13,6 @@ class containerBorder {
         color: myColor.bColor,
         width: 3
     );
-  static BorderRadiusGeometry circular = BorderRadius.circular(11);
+  static BorderRadiusGeometry circular = BorderRadius.circular(sizeHelper.circular11);
   static EdgeInsetsGeometry myPadding =  EdgeInsets.all(12);
  }
