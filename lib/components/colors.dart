@@ -9,5 +9,5 @@ class myColor {
   static Color downloaded = Colors.blue;
   static Color download = Colors.black;
   static Color linear = Colors.white;
-  static Color bgClr = Colors.blue.shade600;
+  static Color bgClr = Colors.black26;
  }
