@@ -6,7 +6,7 @@ import '../components/appSizes.dart';
 class appTheme {
   static final myTheme = ThemeData().copyWith(
     iconTheme: IconThemeData(
-      size: 26,
+      size: sizeHelper.defaultIcn,
       color: myColor.iconClr
     ),
     progressIndicatorTheme: ProgressIndicatorThemeData(
