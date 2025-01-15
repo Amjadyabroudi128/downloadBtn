@@ -13,4 +13,5 @@
    static double pS = 0;
    static double mH = 4;
    static double defaultIcn = 26;
+   static double btmwidth = 4;
  }
