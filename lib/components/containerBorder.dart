@@ -11,7 +11,7 @@ class containerBorder {
   );
   static BorderSide right = BorderSide(
         color: myColor.bColor,
-        width: 3
+        width: sizeHelper.sideWidth
     );
   static BorderRadiusGeometry circular = BorderRadius.circular(sizeHelper.circular11);
   static EdgeInsetsGeometry myPadding =  EdgeInsets.all(12);
