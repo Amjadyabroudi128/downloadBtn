@@ -12,7 +12,7 @@ class appTheme {
     progressIndicatorTheme: ProgressIndicatorThemeData(
       color:  myColor.linear,
       linearMinHeight: sizeHelper.mH,
-      linearTrackColor: Colors.orange
+      linearTrackColor: myColor.bgClr
     )
   );
 }
