@@ -1,12 +1,13 @@
 
- import 'package:download_button/components/colors.dart';
+ import 'package:download_button/components/appSizes.dart';
+import 'package:download_button/components/colors.dart';
 import 'package:flutter/material.dart';
 
 class containerBorder {
 
   static BorderSide btm = BorderSide(
         color: myColor.bColor,
-        width: 4,
+        width: sizeHelper.btmwidth,
   );
   static BorderSide right = BorderSide(
         color: myColor.bColor,
