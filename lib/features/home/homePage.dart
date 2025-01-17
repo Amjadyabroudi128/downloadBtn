@@ -45,6 +45,12 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     setState(() {
       isDownloading = false;
       isDownloaded = true;
+      ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("item is Downloaded"),
+            duration: Duration(seconds: 1),
+          )
+      );
     });
     _progressController.reset();
 
@@ -79,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                 child: GestureDetector(
                   onTap: () {
                     (isDownloading || isDownloaded) ? null : startDownload();
+
                   },
                   child: Padding(
                     padding: containerBorder.myPadding,
