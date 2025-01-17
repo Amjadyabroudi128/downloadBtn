@@ -4,6 +4,7 @@ import 'package:download_button/components/clipRectBorders.dart';
 import 'package:download_button/components/colors.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/myIcons.dart';
+import 'package:download_button/components/snackbar.dart';
 import 'package:download_button/features/home/widgets/Positioned.dart';
 import 'package:download_button/features/home/widgets/animatedBuilder.dart';
 import 'package:download_button/features/home/widgets/textWidget.dart';
@@ -45,12 +46,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     setState(() {
       isDownloading = false;
       isDownloaded = true;
-      ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("item is Downloaded"),
-            duration: Duration(seconds: 1),
-          )
-      );
+      showSnackBar(context, "item is downloaded");
+      // ScaffoldMessenger.of(context).showSnackBar(
+      //     SnackBar(
+      //       content: Text("item is Downloaded"),
+      //       duration: Duration(seconds: 1),
+      //     )
+      // );
     });
     _progressController.reset();
 
