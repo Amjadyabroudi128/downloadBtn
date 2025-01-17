@@ -13,6 +13,13 @@ class appTheme {
       color:  myColor.linear,
       linearMinHeight: sizeHelper.mH,
       linearTrackColor: myColor.bgClr
+    ),
+    snackBarTheme: SnackBarThemeData(
+      contentTextStyle: TextStyle(fontSize: 17, color: Colors.white),
+      behavior: SnackBarBehavior.floating,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12)
+      )
     )
   );
 }
