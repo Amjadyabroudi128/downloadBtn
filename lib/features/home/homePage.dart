@@ -1,4 +1,5 @@
 import 'package:download_button/components/Duration.dart';
+import 'package:download_button/components/Strings.dart';
 import 'package:download_button/components/appSizes.dart';
 import 'package:download_button/components/clipRectBorders.dart';
 import 'package:download_button/components/colors.dart';
@@ -46,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     setState(() {
       isDownloading = false;
       isDownloaded = true;
-      showSnackBar(context, "item is downloaded");
+      showSnackBar(context, kStrings.itemDownloaded);
     });
     _progressController.reset();
 
