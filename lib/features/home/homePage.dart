@@ -47,12 +47,6 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       isDownloading = false;
       isDownloaded = true;
       showSnackBar(context, "item is downloaded");
-      // ScaffoldMessenger.of(context).showSnackBar(
-      //     SnackBar(
-      //       content: Text("item is Downloaded"),
-      //       duration: Duration(seconds: 1),
-      //     )
-      // );
     });
     _progressController.reset();
 
