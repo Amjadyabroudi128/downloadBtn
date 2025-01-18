@@ -10,4 +10,5 @@ class myColor {
   static Color download = Colors.black;
   static Color linear = Colors.white;
   static Color bgClr = Colors.black26;
+  static Color barTextClr = Colors.white60;
  }
