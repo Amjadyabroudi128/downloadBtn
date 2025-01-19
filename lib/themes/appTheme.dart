@@ -1,4 +1,5 @@
  import 'package:download_button/components/colors.dart';
+import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/textStyles.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,7 @@ class appTheme {
     snackBarTheme: SnackBarThemeData(
       contentTextStyle: Textstyles.barText,
       behavior: SnackBarBehavior.floating,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12)
-      )
+      shape: containerBorder.snackBorder
     )
   );
 }
