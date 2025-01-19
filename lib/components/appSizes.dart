@@ -17,4 +17,5 @@
    static double circular11 = 11;
    static double sideWidth = 3;
    static double P12 = 12;
+   static double F18 = 18;
  }
