@@ -19,7 +19,8 @@ class appTheme {
     snackBarTheme: SnackBarThemeData(
       contentTextStyle: Textstyles.barText,
       behavior: SnackBarBehavior.floating,
-      shape: containerBorder.snackBorder
+      shape: containerBorder.snackBorder,
+      showCloseIcon: true
     )
   );
 }
