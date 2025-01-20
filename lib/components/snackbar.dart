@@ -5,7 +5,8 @@ void showSnackBar(BuildContext context, String message, {Duration? duration}) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
       content: Text(message),
-      duration: duration ?? sec1()
+      duration: duration ?? sec1(),
+      dismissDirection: DismissDirection.down, // Custom direction for dismissing (sliding down).
     ),
   );
 }
