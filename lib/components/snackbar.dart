@@ -7,7 +7,6 @@ void showSnackBar(BuildContext context, String message, {Duration? duration}) {
     SnackBar(
       content: Text(message),
       duration: duration ?? sec2(),
-      closeIconColor: myColor.closeIcon,
       dismissDirection: DismissDirection.down, // Custom direction for dismissing (sliding down).
     ),
   );
