@@ -7,6 +7,6 @@ Future<void> delay (BuildContext context, int seconds)  async {
  Duration secs3() {
  return Duration(seconds: 3);
  }
- Duration sec1 () {
- return Duration(seconds: 1);
+ Duration sec2 () {
+ return Duration(seconds: 2);
  }
