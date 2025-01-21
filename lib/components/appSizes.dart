@@ -19,4 +19,5 @@
    static double P12 = 12;
    static double F18 = 18;
    static double F17 = 17;
+   static double circular4 = 4;
  }
