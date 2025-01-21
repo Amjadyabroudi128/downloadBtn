@@ -4,7 +4,7 @@ import 'package:download_button/components/colors.dart';
 import 'package:flutter/material.dart';
 
 class containerBorder {
-
+  static Radius circularindicator = Radius.circular(sizeHelper.circular4);
   static BorderSide btm = BorderSide(
         color: myColor.bColor,
         width: sizeHelper.btmwidth,
@@ -18,4 +18,5 @@ class containerBorder {
   static RoundedRectangleBorder snackBorder = RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(sizeHelper.P12)
   );
+
  }
