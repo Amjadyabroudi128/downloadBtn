@@ -6,17 +6,17 @@ void showSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
       content: Container(
-        height: 18, // Adjust the height as needed
+        height: 18,
         alignment: Alignment.center,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center, // Ensures everything aligns
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
               child: Text(message),
             ),
             IconButton(
-              icon: Icon(Icons.remove, color: Colors.white, size: 16), // Smaller icon
+              icon: Icon(Icons.remove, color: Colors.white, size: 16),
               onPressed: () {
                 ScaffoldMessenger.of(context).hideCurrentSnackBar();
               },
