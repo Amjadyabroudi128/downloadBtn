@@ -7,15 +7,14 @@ void showSnackBar(BuildContext context, String message, {Duration? duration}) {
     SnackBar(
       content: Container(
         height: 18,
-        alignment: Alignment.center,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(message),
-            Spacer(),
+            Expanded(child: Text(message)),
             IconButton(
               onPressed: (){},
-              icon: Icon(Icons.remove),
+              icon: Icon(Icons.remove, size: 16,),
             )
           ],
         ),
