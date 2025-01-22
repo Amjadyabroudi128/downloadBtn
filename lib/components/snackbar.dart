@@ -10,13 +10,14 @@ void showSnackBar(BuildContext context, String message, {Duration? duration}) {
           Text(message),
           Spacer(),
           IconButton(
-            onPressed: (){},
+            onPressed: (){
+              ScaffoldMessenger.of(context).hideCurrentSnackBar();
+            },
             icon: Icon(Icons.remove),
           )
         ],
       ),
       duration: duration ?? sec2(),
-      dismissDirection: DismissDirection.down, // Custom direction for dismissing (sliding down).
     ),
   );
 }
