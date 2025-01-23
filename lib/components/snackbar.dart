@@ -16,16 +16,27 @@ void showSnackBar(BuildContext context, String message) {
             Expanded(
               child: Text(message),
             ),
-            IconButton(
-              icon: myIcons.Close,
-              onPressed: () {
-                ScaffoldMessenger.of(context).hideCurrentSnackBar();
-              },
-              padding: EdgeInsets.zero, // Remove extra padding
-            ),
+            closeIcon(),
           ],
         ),
       ),
     ),
   );
+}
+
+class closeIcon extends StatelessWidget {
+  const closeIcon({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      icon: myIcons.Close,
+      onPressed: () {
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
+      },
+      padding: EdgeInsets.zero, // Remove extra padding
+    );
+  }
 }
