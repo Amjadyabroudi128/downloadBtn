@@ -16,7 +16,7 @@ void showSnackBar(BuildContext context, String message) {
               child: Text(message),
             ),
             IconButton(
-              icon: Icon(Icons.remove, color: Colors.white, size: 16),
+              icon: Icon(Icons.remove,size: 16),
               onPressed: () {
                 ScaffoldMessenger.of(context).hideCurrentSnackBar();
               },
