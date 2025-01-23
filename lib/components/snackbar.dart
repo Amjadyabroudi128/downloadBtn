@@ -1,7 +1,6 @@
-import 'package:download_button/components/Duration.dart';
-import 'package:download_button/components/colors.dart';
-import 'package:download_button/components/myIcons.dart';
 import 'package:flutter/material.dart';
+
+import 'iconButton.dart';
 
 void showSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(
@@ -22,21 +21,4 @@ void showSnackBar(BuildContext context, String message) {
       ),
     ),
   );
-}
-
-class closeIcon extends StatelessWidget {
-  const closeIcon({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      icon: myIcons.Close,
-      onPressed: () {
-        ScaffoldMessenger.of(context).hideCurrentSnackBar();
-      },
-      padding: EdgeInsets.zero, // Remove extra padding
-    );
-  }
 }
