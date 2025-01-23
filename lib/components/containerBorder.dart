@@ -18,5 +18,5 @@ class containerBorder {
   static RoundedRectangleBorder snackBorder = RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(sizeHelper.P12)
   );
-
+  static EdgeInsetsGeometry padding0 = EdgeInsets.zero;
  }
