@@ -1,3 +1,4 @@
+import 'package:download_button/components/containerBorder.dart';
 import 'package:flutter/material.dart';
 
 import 'myIcons.dart';
@@ -14,7 +15,7 @@ class closeIcon extends StatelessWidget {
       onPressed: () {
         ScaffoldMessenger.of(context).hideCurrentSnackBar();
       },
-      padding: EdgeInsets.zero, // Remove extra padding
+      padding: containerBorder.padding0, // Remove extra padding
     );
   }
 }
