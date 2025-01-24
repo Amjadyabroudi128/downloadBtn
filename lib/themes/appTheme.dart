@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../components/appSizes.dart';
 
 class appTheme {
+  static final floating = SnackBarBehavior.floating;
   static final myTheme = ThemeData().copyWith(
     iconTheme: IconThemeData(
       size: sizeHelper.defaultIcn,
@@ -18,7 +19,7 @@ class appTheme {
     ),
     snackBarTheme: SnackBarThemeData(
       contentTextStyle: Textstyles.barText,
-      behavior: SnackBarBehavior.floating,
+      behavior: floating,
       shape: containerBorder.snackBorder,
     )
   );
