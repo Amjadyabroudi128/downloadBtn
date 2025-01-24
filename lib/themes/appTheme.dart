@@ -7,6 +7,7 @@ import '../components/appSizes.dart';
 
 class appTheme {
   static const floating = SnackBarBehavior.floating;
+  static  RoundedRectangleBorder snackbarBorder = containerBorder.snackBorder;
   static final myTheme = ThemeData().copyWith(
     iconTheme: IconThemeData(
       size: sizeHelper.defaultIcn,
@@ -20,7 +21,7 @@ class appTheme {
     snackBarTheme: SnackBarThemeData(
       contentTextStyle: Textstyles.barText,
       behavior: floating,
-      shape: containerBorder.snackBorder,
+      shape: snackbarBorder
     )
   );
 }
