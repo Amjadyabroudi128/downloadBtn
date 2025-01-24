@@ -20,8 +20,6 @@ class appTheme {
       contentTextStyle: Textstyles.barText,
       behavior: SnackBarBehavior.floating,
       shape: containerBorder.snackBorder,
-      // showCloseIcon: true,
-      // closeIconColor: myColor.closeIcon
     )
   );
 }
