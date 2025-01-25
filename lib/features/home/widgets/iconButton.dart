@@ -2,7 +2,7 @@ import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/hideSnackbar.dart';
 import 'package:flutter/material.dart';
 
-import 'myIcons.dart';
+import '../../../components/myIcons.dart';
 
 class closeIcon extends StatelessWidget {
   const closeIcon({
