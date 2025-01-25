@@ -20,4 +20,5 @@
    static double F18 = 18;
    static double F17 = 17;
    static double circular4 = 4;
+   static double height18 = 18;
  }
