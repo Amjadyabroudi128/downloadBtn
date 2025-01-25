@@ -1,4 +1,5 @@
 import 'package:download_button/components/appSizes.dart';
+import 'package:download_button/components/containerBorder.dart';
 import 'package:flutter/material.dart';
 
 import '../features/home/widgets/iconButton.dart';
@@ -8,7 +9,7 @@ void showSnackBar(BuildContext context, String message) {
     SnackBar(
       content: Container(
         height: sizeHelper.height18,
-        alignment: Alignment.center,
+        alignment: containerBorder.centre,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
