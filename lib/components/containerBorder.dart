@@ -19,4 +19,5 @@ class containerBorder {
       borderRadius: BorderRadius.circular(sizeHelper.P12)
   );
   static EdgeInsetsGeometry padding0 = EdgeInsets.zero;
+  static AlignmentGeometry centre = Alignment.center;
 }
