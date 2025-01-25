@@ -19,4 +19,6 @@ class containerBorder {
       borderRadius: BorderRadius.circular(sizeHelper.P12)
   );
   static EdgeInsetsGeometry padding0 = EdgeInsets.zero;
- }
+  static ScaffoldMessenger close = ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
+}
