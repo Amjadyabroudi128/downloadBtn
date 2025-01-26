@@ -11,7 +11,7 @@ void showSnackBar(BuildContext context, String message) {
         height: sizeHelper.height18,
         alignment: containerBorder.centre,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: containerBorder.space,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
