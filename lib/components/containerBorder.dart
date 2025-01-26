@@ -21,4 +21,5 @@ class containerBorder {
   static EdgeInsetsGeometry padding0 = EdgeInsets.zero;
   static AlignmentGeometry centre = Alignment.center;
   static MainAxisAlignment space = MainAxisAlignment.spaceBetween;
+  static CrossAxisAlignment CentreC = CrossAxisAlignment.center;
 }
