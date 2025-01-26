@@ -1,5 +1,6 @@
 import 'package:download_button/components/containerBorder.dart';
 import 'package:download_button/components/hideSnackbar.dart';
+import 'package:download_button/components/iconButton.dart';
 import 'package:flutter/material.dart';
 
 import '../../../components/myIcons.dart';
@@ -11,12 +12,12 @@ class closeIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      icon: myIcons.Close,
-      onPressed: () {
+    return closeBtn(
+      kIcon: myIcons.Close,
+      press: () {
         hideBar(context);
       },
-      padding: containerBorder.padding0, // Remove extra padding
+      myPadding: containerBorder.padding0, // Remove extra padding
     );
   }
 }
