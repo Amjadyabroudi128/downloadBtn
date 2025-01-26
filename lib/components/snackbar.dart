@@ -2,7 +2,7 @@ import 'package:download_button/components/appSizes.dart';
 import 'package:download_button/components/containerBorder.dart';
 import 'package:flutter/material.dart';
 
-import '../features/home/widgets/iconButton.dart';
+import '../features/home/widgets/closeBtn.dart';
 
 void showSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(
