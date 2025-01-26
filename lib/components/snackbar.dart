@@ -12,7 +12,7 @@ void showSnackBar(BuildContext context, String message) {
         alignment: containerBorder.centre,
         child: Row(
           mainAxisAlignment: containerBorder.space,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: containerBorder.CentreC,
           children: [
             Expanded(
               child: Text(message),
